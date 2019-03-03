@@ -25,3 +25,10 @@ sudo apt-get install build-essential python-dev
 sudo python setup.py install
 
 NOW CREATE A FILE WITH .PY EXTENSION LET'S SAY EXAMPLE.PY
+
+NOW RUN THE CODE BY ENTERING:
+
+PYTHON EXAMPLE.PY
+
+NOW YOU SHOULD SEEING THE OUTPUT IN THE TERMINAL
+
