@@ -1,18 +1,41 @@
-# DHT11_python_raspberry-pi
-HI GUYS,
+# DHT11 Python Raspberry-pi
+## Components
+1. [Raspberry PI3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+2. [DTH11 Sensor](https://www.adafruit.com/product/386), available amazon.in also
+3. Bread Board
+4. Jumper Wires
 
-1.THE AIM OF THIS PROJECT IS TO MEASURE TEMPERATURE AND HUMIDITY USING DHT11 SENSOR VIA RASPBERRY PI 
+## Optional Components
+1. HDMI Cable 1 meter
+2. Keyboard and mouse
+3. TV
 
-2.YOU WILL NEED A RASPBERRY PI WITH THE RASBIAN OS,DH11 SENSOR,JUMPER WIRES AND A SMALL BREAD BOARD 
+## Prerequisites
+See [Prerequisites](./PREREQ.md)
 
-3.FIRST TAKE A BREAD BOARD AND INSERT THE DHT11 SENSOR,NOW CONNECT THE GPIO PINS AS FOLLOWS: 
+## Instructions
 
-4.TAKE A JUMPER WIRE,CONNECT THE GROUND PIN OF THE DHT11 TO PIN(6) OF THE RASPBERRY PI 
+1. The aim of this project is to measure temperature and humidity using DHT11 sensor via Raspberry pi.
+2. You will need a RasPi with the Rasbian OS, DHT11 Sensor, Jumper wires and a small bread board.
+3. First take a bread board and insert the DHT11 sensor, Now connect the GPIO(General Purpose Input Output) pins as fallows.
+  1. Take a jumper wire, connect the ground pin of the DHT11 to pin(6) of the Raspberry Pi.
+  2. Take another jumper wire, connect the data pin of the DHT11 to pin(7) of the Raspberry Pi.
+  3. And connect, the last pin of the DHT11 which is VCC(Voltage Common Collector) to pin(2) of the Raspberry Pi.
+4. Now the circuit part is over Let's Jump to Programming part.
 
-5.TAKE ANOTHER JUMPER WIRE,CONNECT THE DATA PIN OF THE DHT11 TO PIN (7) OF THE RASPBERRY PI 
+## First Look
+![first-look](https://user-images.githubusercontent.com/46535652/53825943-7d882300-3f9d-11e9-9102-dfcbbf2af2c3.jpg)
 
-6.AND CONNECT,THE LAST PIN OF THE DHT11 WHICH IS VCC TO PIN (2) OF THE RASPBERRY PI 
+Use virtual environment for this project, read more information virtual environment https://realpython.com/python-virtual-environments-a-primer/
 
-7.NOW THE CIRCUIT PART IS OVER LET'S JUMP TO PROGRAMMING PART
+## Examples
+You can find the [EXAMPLE.py](./EXAMPLE.py)
 
-YOU CAN FIND THE CODE IN THE IN EXAMPLES
+## Execution
+``` Bash
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python EXAMPLE.py
+```
+This project Licensed under MIT(./LICENSE.md)
